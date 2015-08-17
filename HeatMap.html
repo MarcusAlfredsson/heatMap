@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heat Map | CartoDB.js</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+
+    <style> 
+
+    </style>
+    <link rel="stylesheet" href="css/HeatMap.css" />
+
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+</head>
+<body>
+    <div id="map"></div>
+    <div id="filter_selector" class="cartodb-infobox">
+      <ul>
+        <li data="all" class="selected">Allt</li>
+    </ul>
+    <ul id="type_filter">
+        <li data="CABLE_INDICATION">Kabel dragningar</li>
+        <li data="PROJECT">Projekt</li>
+        <li data="PLANNING">Planering</li>
+        <li data="COLLABORATE">Sammarbete</li>
+    </ul>
+    <ul id="org_filter">
+        <li data="company">Företag</li>
+        <li data="private">Privat</li>
+    </ul>
+    <ul id="layer_filter">
+        <li data="heatLayer">Värme karta</li>
+        <li data="pointLayer">Punkt karta</li>
+    </ul>
+</div>
+<div id="datePicker" class="cartodb-infobox">
+    <p>Start datum: <input type="text" id="pickStartDate" onchange="setDate()">
+    <p>Slut datum: <input type="text" id="pickEndDate" onchange="setDate()"></p>
+</div>
+
+<!-- include cartodb.js library -->
+<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script src="scripts/QueryBuilder.js"> </script>
+<script src="scripts/HeatMap.js"> </script>
+</body>
+</html>

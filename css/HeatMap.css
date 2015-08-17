@@ -1,0 +1,68 @@
+html, body, #map {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#filter_selector {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 0;
+}
+#org_selector {
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    padding: 0;
+}
+#datePicker {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    width: 100px;
+    padding: 0;
+}
+#datePicker input {
+    width: 90px;
+}
+#filter_selector ul, #org_selector ul {
+    padding: 0; margin: 0;
+    list-style-type: none;
+}
+#filter_selector li, #org_selector li {
+    border-bottom: 1px solid #999;
+    padding: 15px 30px;
+    font-family: "Helvetica", Arial;
+    font-size: 13px;
+    color: #444;
+    cursor: auto;
+}
+#filter_selector li:hover, #org_selector li:hover {
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+#filter_selector li.selected, #org_selector li.selected {
+    background-color: #E4F95A;
+}
+#datePicker {
+    font-family: "Helvetica", Arial;
+    font-size: 13px;
+}
+.commentForm {
+ display: table;
+}
+.commentButton {
+ font-size:16;
+ padding:5px 15px; 
+ background:#ccc; 
+ border:0 none;
+ cursor:pointer;
+ -webkit-border-radius: 5px;
+ border-radius: 5px; 
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
